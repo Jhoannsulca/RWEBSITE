@@ -1,0 +1,19 @@
+---
+title: "My Website"
+---
+
+Hello, website!
+
+$$f_x(x;\mu,\sigma)=\displaystyle \frac{1}{\sqrt{2\pi}\, \sigma}\,\ e^{-\frac{1}{2}(\frac{x- \mu}{\sigma})^2} $$
+
+```{r echo=FALSE}
+x <- round(rnorm(1000,150,2),0)
+n = 3000
+y <- sample(x,n,T) #Con reposición
+hist(y)
+abline(v=mean(x),lwd=3,lty=2,col=2)
+abline(v=mean(y),lwd=3,lty=2,col=4)
+```
+
+
+
